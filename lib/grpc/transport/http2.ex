@@ -36,6 +36,7 @@ defmodule GRPC.Transport.HTTP2 do
       # It seems only gRPC implemenations only support "application/grpc", so we support :content_type now.
       {"content-type", opts[:content_type] || "application/grpc+#{codec.name}"},
       {"user-agent", "grpc-elixir/#{opts[:grpc_version] || GRPC.version()}"},
+      {"authorization", "#{opts[:authorization]}"},
       {"te", "trailers"}
     ]
     |> append_compressor(stream.compressor)
