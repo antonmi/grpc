@@ -37,7 +37,6 @@ defmodule GRPC.Mixfile do
       else
         "~> 0.19"
       end
-
     [
       {:protobuf, "~> 0.5"},
       {:cowboy, github: "elixir-grpc/cowboy", tag: "grpc-2.6.3"},
