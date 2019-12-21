@@ -39,11 +39,7 @@ defmodule GRPC.Mixfile do
       end
     [
       {:protobuf, "~> 0.5"},
-#      {:cowboy, github: "elixir-grpc/cowboy", tag: "grpc-2.6.3"},
-#      {:cowboy, "~> 2.7"},
       {:gun, github: "elixir-grpc/gun", tag: "grpc-1.3.2"},
-#      {:gun, github: "ninenines/gun", tag: "2.0.0-pre.1"},
-#              {:cowlib, github: "ninenines/cowlib"},
       {:ex_doc, ex_doc_version, only: :dev},
       {:inch_ex, "~> 1.0", only: [:dev, :test]},
       {:dialyxir, "~> 0.5", only: :dev, runtime: false}
